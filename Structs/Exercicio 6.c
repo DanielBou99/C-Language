@@ -1,6 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 
+/*6. Faça um programa que utilize as seguintes informações:
+Médicos Pacientes Consultas
+Código do médico Código do paciente Número do Prontuário
+Nome Nome do paciente Data da consulta
+Especialidade Sexo Horário da consulta
+Idade Código do médico
+Código do paciente
+a) Crie rotinas para realizar a inclusão no cadastro de médicos e pacientes;
+b) Crie rotinas para listar todos os médicos e pacientes cadastrados;
+c) Crie uma rotina para cadastrar uma consulta. Verifique se o código do médico e do
+paciente existem. Não permita que duas ou mais consultas sejam marcadas no mesmo
+dia e horário para o mesmo médico;
+d) Crie uma rotina para mostrar todas as consultas realizadas por um médico numa data
+qualquer, escolhidos pelo usuário.
+*/
+
 struct medicos {
 
     int codigo;
@@ -289,7 +305,7 @@ void criarConsulta(struct pacientes pacientes[], struct medicos medicos[], struc
         scanf("%5[^\n]", hora);
         fflush(stdin);
 
-        /*VERIFICAR SE N�O H� OUTRA CONSULTA NO MESMO DIA/HORARIO*/
+        /*VERIFICAR SE NÃO HÁ OUTRA CONSULTA NO MESMO DIA/HORARIO*/
 
         for (i=0; i < *kc; i++) {
 
