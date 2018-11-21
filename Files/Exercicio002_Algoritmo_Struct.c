@@ -3,11 +3,32 @@
 #include <stdlib.h>
 
 /*
-UNISANTOS - Ci�ncia da Computa��o.
+UNISANTOS - Ciência da Computação.
 Algoritmo II - 2018.
 Autor: Daniel Bou de Souza.
 
 Data: 21/11/2018.
+*/
+
+/*2) Seja um sistema destinado a controlar despesas e dados de um condomínio de apartamentos. 
+Os dados de cada apartamento são armazenados em um vetor de estruturas. Para cada apartamento tem-se os seguintes dados: 
+•	nome (do responsável) 
+•	número (do apartamento) 
+•	área (em m2 ) 
+•	número de moradores 
+•	valor (a ser pago no mês) 
+
+a)	Definir a estrutura acima e considere que os dados devem ser gravados em arquivo binário;
+b)	Declarar um vetor de estruturas (global), suponde que o condomínio tem 40 apartamentos. 
+c)	Crie um menu para:
+d)	 Escrever um bloco de instruções responsável por ler o vetor acima, exceto o campo valor. 
+e)	Escrever um bloco de instruções que retorne a área total do condomínio. 
+f)	Escrever um bloco de instruções que receba a área total do condomínio; leia o total de despesas 
+do mesmo e calcule para cada apartamento o valor a ser pago no mês. Esse valor é proporcional à área do apartamento. 
+g)	Fazer um bloco de instruções para imprimir os dados do apartamento que tem o maior número de moradores. 
+Em caso de haver mais de um, imprimir todos. 
+h)	Escrever um bloco de instruções para listar em ordem decrescente os aptos com maior condomínio;
+i)	Escrever um bloco de instruções para sair do programa.
 */
 
 typedef struct
