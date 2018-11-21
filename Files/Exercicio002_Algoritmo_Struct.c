@@ -10,7 +10,8 @@ Autor: Daniel Bou de Souza.
 Data: 21/11/2018.
 */
 
-/*2) Seja um sistema destinado a controlar despesas e dados de um condomínio de apartamentos. 
+/*
+2) Seja um sistema destinado a controlar despesas e dados de um condomínio de apartamentos. 
 Os dados de cada apartamento são armazenados em um vetor de estruturas. Para cada apartamento tem-se os seguintes dados: 
 •	nome (do responsável) 
 •	número (do apartamento) 
