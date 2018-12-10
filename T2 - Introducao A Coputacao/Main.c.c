@@ -8,12 +8,57 @@
 * Programa para fazer o levantamento de preços
 * de produtos em diferentes lojas.
 *
+* Sistema Operacional: Linux
+*
 * Daniel Bou de Souza (Ciência da Computação)
 * Mauricio Freire (Sistema de Informação)
 *
 * Disciplina: Introdução  à Computação ­II
 *
 * 04/12/2018
+*/
+
+/*
+O sistema deve possuir as seguintes funcionalidades, todas elas implementadas através
+de funções:
+a) Cadastrar produtos: através dessa opção é possível cadastrar um ou mais produtos. A
+chave primária da tabela onde os produtos serão cadastrados é o código do produto
+(membro cod da estrutura tproduto) que é um número sequencial gerado
+automaticamente, sendo assim, o código do primeiro produto será igual a 1, o do
+segundo igual a 2, e assim por diante. Os produtos possuem apenas uma descrição
+(membro descricao da estrutura tproduto);
+b) Alterar um produto: através dessa opção o usuário pode alterar a descrição de um
+produto, dado seu código. O sistema deverá solicitar o código do produto a ser
+alterado, mostrar sua descrição atual e solicitar a nova descrição do produto. Se o
+código informado pelo usuário for inválido, mostrar uma mensagem de erro;
+c) Listar os produtos cadastrados: através dessa opção o usuário obtém uma listagem em
+formato de tabela contendo o código e a descrição dos produtos cadastrados. Essa
+listagem deverá estar ordenada em ordem alfabética ascendente pela descrição do
+produto;
+d) Cadastrar lojas: através dessa opção o usuário pode cadastrar uma ou mais lojas. A
+chave primária da tabela onde as lojas serão cadastrados é o código da loja (membro
+cod da estrutura tloja) que é um número sequencial gerado automaticamente, sendo
+assim, o código da primeira loja será igual a 1, o da segunda igual a 2, e assim por
+diante. As lojas possuem um nome e site (membros nome e site, respectivamente, da
+estrutura tloja);
+e) Listar as lojas cadastradas: através dessa opção o usuário obtém uma listagem em
+formato de tabela contendo o código, nome e site das lojas cadastradas. Essa listagem
+deverá estar ordenada em ordem alfabética ascendente pelo nome da loja;
+f) Cadastrar preços: através desta opção o usuário poderá cadastrar o preço de um
+produto em uma ou mais lojas. O sistema deverá solicitar o código do produto, o
+código de uma ou mais lojas e cadastrar o preço do produto nessas lojas (membros
+cod_produto, cod_loja e preco da estrutura tpreco, respectivamente). Se o código do
+produto ou o código da loja forem inválidos, o sistema deverá exibir uma mensagem
+de erro. Não deve ser permitido cadastrar o preço de um produto na mesma loja mais
+de uma vez;
+g) Listar preços cadastrados: através dessa opção o usuário obtém uma listagem em
+formato de tabela contendo o nome do produto, o nome da loja e preço do produto de
+todos os preços cadastrados. Essa listagem deverá estar ordenada em ordem alfabética
+ascendente pelo nome da loja e pelo preço do produto em ordem descendente;
+h) Consultar o preço de um produto: através dessa opção o usuário poderá consultar os
+preços de um produto. O sistema deverá solicitar o código de um produto, mostrar seu
+nome e o preço desse produto em todas as lojas onde ele foi cadastrado. Se o código
+do produto for inválido ou seu preço não foi cadastrado, exibir uma mensagem.
 */
 
 typedef struct
