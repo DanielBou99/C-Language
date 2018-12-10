@@ -1,14 +1,14 @@
-/* Enigma.c
+/*Â Enigma.c
 *
-* Programa que determina a quantidade de posições possíveis para
-* decriptar um crib informado pelo próprio usuário.
+*Â ProgramaÂ queÂ determinaÂ a quantidade de posiÃ§Ãµes possÃ­veis para
+* decriptar um crib informado pelo prÃ³prio usuÃ¡rio.
 *
-* Daniel Bou (Ciência da Computação)
-* Mauricio Freire (Ciência da Computação)
+*Â Daniel BouÂ (CiÃªncia da ComputaÃ§Ã£o)
+*Â Mauricio FreireÂ (CiÃªnciaÂ daÂ ComputaÃ§Ã£o)
 *
-* Disciplina: Introdução à Computação­II
+*Â Disciplina:Â IntroduÃ§Ã£oÂ Ã Â ComputaÃ§Ã£oÂ­II
 *
-* 27/09/2018
+*Â 27/09/2018
 */
 #include <stdio.h>
 #include <string.h>
@@ -80,12 +80,12 @@ int main()
 }
 
 
-/* função que recebe um ponteiro inteiro e um vetor
-* de caracteres. A função altera o valor do inteiro.  */
+/*Â funÃ§Ã£oÂ queÂ recebeÂ um ponteiro inteiro e um vetor
+* de caracteres. A funÃ§Ã£o altera o valor do inteiro. Â */
 
 void verificacao(int *controle, char string[])
 {
-/* A função devolve 0 à variavel *controle se houver
+/*Â A funÃ§Ã£o devolve 0 Ã  variavel *controle se houver
 * um caractere minusculo na string ou devolve o valor 1 se
 * todos os caracteres forem maiusculos.
 */
@@ -105,13 +105,13 @@ void verificacao(int *controle, char string[])
 
 }
 
-/* função que recebe uma variavel int e dois ponteiros constantes do tipo char
+/*Â funÃ§Ã£oÂ queÂ recebeÂ uma variavel int e dois ponteiros constantes do tipo char
 e devolve true ou false*/
 
 bool eh_possivel(int index, const char * mensagem, const char * crib)
 {
 
-/* A função irá devolver true se não encontrar *crib em
+/*Â A funÃ§Ã£o irÃ¡ devolver true se nÃ£o encontrar *crib em
 * *mensagem de acordo com o int index
 * e ira devolver false se encontrar a *crib na *mensagem.
 */
