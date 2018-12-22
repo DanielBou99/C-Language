@@ -8,7 +8,7 @@
     *Funcionamento: Esse programa ira verificar se todos os dados
     *do arquivo Primario.txt constam no arquivo Secundario.txt
     *e criara um novo arquivo chamado Resultado.txt que informara
-    *os dados n„o encontrados.
+    *os dados n√£o encontrados.
     *
     *Data: 21/12/18.
     *
@@ -141,7 +141,6 @@ void comparar()
     while(fgets(container,100,arq) != NULL)
     {
         strcpy(primario[i],container);
-        // printf("%s", primario[i]);
         i += 1;
     }
     fclose(arq);
