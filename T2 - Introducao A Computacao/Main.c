@@ -11,7 +11,7 @@
 * Sistema Operacional: Linux
 *
 * Daniel Bou de Souza (Ciência da Computação)
-* Mauricio Freire (Sistema de Informação)
+* Mauricio Freire (Ciência da Computação)
 *
 * Disciplina: Introdução  à Computação ­II
 *
